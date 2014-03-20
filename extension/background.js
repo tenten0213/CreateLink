@@ -19,7 +19,8 @@ CreateLink.default_formats = [
     {label: "HTML", format: '<a href="%url%">%htmlEscapedText%</a>' },
     {label: "markdown", format: '[%text%](%url%)' },
     {label: "mediaWiki", format: '[%url% %text%]' },
-    {label: "Hiki", format: '[[%text%|%url%]]' }
+    {label: "Hiki", format: '[[%text%|%url%]]' },
+    {label: "reST", format: '`%text% <%url%>`_' }
 ];
 
 CreateLink.prototype.copyToClipboard = function (text) {
